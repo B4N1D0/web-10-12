@@ -1,0 +1,73 @@
+:root{
+    --cor-do-fundo:lightblue;
+    --cor-do-fundo-dos-quadrados:white;
+}
+body{
+    background-image: url(fotos/Sem\ título.png);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 10px;
+}
+ul li{
+  padding-left: 0;
+  list-style: none;
+  display: inline-block;
+  margin-right: 10PX;
+  color: rgb(0, 152, 247);
+}
+header{
+    background-color: var(--cor-do-fundo-dos-quadrados);
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius:5px;
+    box-shadow: 5px 5px 20px;
+}
+main{
+    background-image: url(fotos/Great_Wave_off_Kanagawa2\ peq.jpg);
+    border: 2px solid black;
+    margin: auto;
+    width: 60%;
+    height: 700px;
+    background-size: cover;
+    object-position: 0 80%;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px;
+}
+footer{
+    background-color: var(--cor-do-fundo-dos-quadrados);
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px;
+    height: 100px;
+}
+.ativo{
+    background-color:rgb(0, 152, 247);
+    padding: 10px;
+    color: var(--cor-do-fundo-dos-quadrados);
+    border-radius: 10px;
+    cursor: pointer;
+}
+img{
+    width: 40px;
+    cursor: point;
+}
+.canto{
+    text-align: end;
+}
+h1{
+    font-size: 25px;
+}
+ul{
+    padding: 0;
+}
+

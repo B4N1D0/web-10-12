@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section>header{
+    text-align: center;
+    border: 1px solid black;
+    
+    min-height: 250px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    
+}
+ul li{
+    list-style: none; 
+    display: inline-block;
+    margin-right: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    min-height: 70px;  
+}
+div{
+    display: flex;
+    justify-content: sp;
+    flex-direction: row;
+}
+main{
+    display: flex;
+    border: 1px solid black; 
+}
+aside{
+    border: 1px solid black;
+}
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Meu Gatinho Fofinho</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+
+    <header id="inicio" class="main-header">
+        <h1>Formulário Felino</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="formulario.html">Formulário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Cadastre seu Gatinho!</h2>
+            <p>Preencha o formulário abaixo para compartilhar informações sobre seu pet.</p>
+
+            <form action="/enviar-dados" method="POST">
+
+                <fieldset>
+                    <legend>Informações do Dono</legend>
+
+                    <div class="form-group">
+                        <label for="nome-dono">Seu Nome:</label>
+                        <input type="text" id="nome-dono" name="nome-dono" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Seu Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações do Gatinho</legend>
+
+                    <div class="form-group">
+                        <label for="nome-gato">Nome do Gato:</label>
+                        <input type="text" id="nome-gato" name="nome-gato" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="idade-gato">Idade (anos):</label>
+                        <input type="number" id="idade-gato" name="idade-gato" min="0" max="30">
+                    </div>
+
+                    <div class="form-group">
+                        <p>Personalidade do Gato (escolha apenas um):</p>
+                        <div class="radio-group">
+                            <input type="radio" id="calmo" name="personalidade" value="calmo">
+                            <label for="calmo">Calmo</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="brincalhao" name="personalidade" value="brincalhao">
+                            <label for="brincalhao">Brincalhão</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="timido" name="personalidade" value="timido">
+                            <label for="timido">Tímido</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Coisas que seu gato gosta (escolha quantos quiser):</p>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="petisco" name="gostos" value="petisco">
+                            <label for="petisco">Petiscos</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="brinquedo" name="gostos" value="brinquedo">
+                            <label for="brinquedo">Brinquedos de pena</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="caixa" name="gostos" value="caixa">
+                            <label for="caixa">Caixas</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Envie uma foto do seu gato:</p>
+                        <label for="foto-gato" class="sr-only">Foto:</label>
+                        <input type="file" id="foto-gato" name="foto-gato" accept="image/*">
+                    </div>
+
+                    <div class="form-group">
+                        <p>Conte-nos uma história engraçada sobre seu gato:</p>
+                        <label for="historia" class="sr-only">História:</label>
+                        <textarea id="historia" name="historia" rows="5" cols="40"
+                            placeholder="Era uma vez..."></textarea>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit">Enviar Formulário</button>
+                    <button type="reset" class="btn-secondary">Limpar Tudo</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="#inicio">Voltar ao topo</a>
+        </p>
+        <p>&copy; 2025 Meu Gatinho Fofinho. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

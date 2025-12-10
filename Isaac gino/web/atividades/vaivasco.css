@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-image: url(fotos/vampeta.jpg);
+    background-size: cover;
+}
+main{
+    display: flex;
+    background-color: white;
+    width: 900px;
+    margin:auto;
+    margin-top: 100px;
+    border-radius: 15px;
+    height: 600px;
+    padding: 10px;
+}
+
+.solido2{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.solido{
+    flex: 3;
+    display: flex;
+    background-image: url(fotos/pexels-ann-h-45017-1762851.jpg);
+    background-size: cover;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding: 10px;
+    width: 480px;
+    height: 580px;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+button{
+    color: white;
+    background-color: black;
+    width: 179px;
+    height: 30px;
+    border-radius:10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.input{
+    width: 180px;
+    height: 25px;
+    border-radius:5px;
+}
