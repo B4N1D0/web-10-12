@@ -1,0 +1,19 @@
+:root{
+    --cor-do-main:orange;
+    --cor-do-fundo:rgb(37, 37, 35);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--cor-do-fundo);
+}
+main{
+    background-color:var(--cor-do-main);
+    max-width: 900px;
+    border:solid black ;
+    height:800px;
+    margin: auto;
+    text-align: center;
+
+}

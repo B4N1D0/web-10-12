@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vamobrinca.css">
+</head>
+<body>
+    <main>
+    <form onsubmit="enviarDados()">
+        <labe 
+        for="usuario">usuario:</label>
+        <input 
+        type="text" 
+        name="usuario" 
+        id="usuario-input"
+        >
+
+        <label 
+        for="senha">senha:</label>
+        <input 
+        type="password" 
+        name="password" 
+        id="password-input"
+        >
+        <button type="submit">
+            enviar dados
+        </button>
+    </form>
+    </main>
+</body>
+<script>
+    function enviarDados() {
+        event.preventDefault()
+        const inputSenha = document.getElementById('password-input');
+        const inputName = document.getElementById('usuario-input');
+        if(inputName.value == 'admin' && inputSenha.value == '1234') {
+            window.location.href = "https://www.google.com"; 
+        }
+        else(
+            alert("vai passando tudo")
+    )
+    }
+</script>
+</html>
