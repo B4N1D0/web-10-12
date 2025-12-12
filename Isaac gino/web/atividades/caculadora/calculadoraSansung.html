@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculadoraSansung.css">
+</head>
+<body> 
+    <main>
+    <header>
+        <p class="top"><span id="resultado"></span></p>
+    </header>
+   
+        <div>
+            <hr>
+            <br>
+            <button onclick = "botãoC()"class="classe-botãoC">C</button>
+            <button onclick = "botaoparents()"class="classe-botão-de-Conta">( )</button>
+            <button class="classe-botão-de-Conta">%</button>
+            <button class="classe-botão-de-Conta">÷</button>
+        </div>
+        <div>
+            <button data-number="7" class="classe-botão-numericos">7</button>
+            <button class="classe-botão-numericos">8</button>
+            <button class="classe-botão-numericos">9</button>
+            <button class="classe-botão-de-Conta">X</button>
+        </div>
+        <div>
+            <button class="classe-botão-numericos">4</button>
+            <button class="classe-botão-numericos">5</button>
+            <button class="classe-botão-numericos" >6</button>
+            <button class="classe-botão-de-Conta">-</button>
+        </div>
+        <div>
+            <button class="classe-botão-numericos">3</button>
+            <button class="classe-botão-numericos">2</button>
+            <button class="classe-botão-numericos">1</button>
+            <button class="classe-botão-de-Conta">+</button>
+        </div>
+          <div>
+            <button class="classe-botão-numericos">+/_</button>
+            <button class="classe-botão-numericos">0</button>
+            <button class="classe-botão-numericos">,</button>
+            <button class="classe-botão-soma">=</button>
+        </div>
+    </main>
+    <script>
+        let previousNumber = ""
+        let nextNumber = ""
+        let operation = ""
+
+        const $numberButtons = document.querySelectorAll("[data-number]")
+        $numberButtons.forEach(button === button.addEventlister("click", () == { let number = button.dataset.number
+           previousNumber += console.log();
+           
+        }))
+    </script>
+</body>
+</html> 
