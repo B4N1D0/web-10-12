@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+
+    <script>
+    function somarNumero() {
+
+        let numero1 = document.getElementById('primeiro').value;
+        let numero2 = document.getElementById('segundo').value;
+
+        let n1 = Number(numero1);
+        let n2 = Number(numero2);
+        
+        let soma = n1 + n2;
+
+        document.getElementById('resultado') .textContent = soma;
+        document.getElementById('resultado') .style.color = "black";
+    }
+    function subtrairNumero() {
+
+        let numero1 = document.getElementById('primeiro').value;
+        let numero2 = document.getElementById('segundo').value;
+
+        let n1 = Number(numero1);
+        let n2 = Number(numero2);
+        
+        let subtrair = n1 - n2;
+
+        document.getElementById('resultado') .textContent = subtrair;
+        document.getElementById('resultado') .style.color = "black";
+    }
+    function multiplicarNumero() {
+
+        let numero1 = document.getElementById('primeiro').value;
+        let numero2 = document.getElementById('segundo').value;
+
+        let n1 = Number(numero1);
+        let n2 = Number(numero2);
+        
+        let multiplicar = n1 * n2;
+
+        document.getElementById('resultado') .textContent = multiplicar ;
+        document.getElementById('resultado') .style.color = "black";
+    }
+    function dividirNumero() {
+        let numero1 = document.getElementById('primeiro').value;
+        let numero2 = document.getElementById('segundo').value;
+
+        let n1 = Number(numero1);
+        let n2 = Number(numero2);
+        
+        const resultadoElement = document.getElementById('resultado');
+        if (n2 === 0) {
+            resultadoElement.textContent = "Error";
+            resultadoElement.style.color = "red";
+        }
+        else{
+            const resultado = n1 / n2;
+            resultadoElement.textContent = resultado;
+            resultadoElement.style.color = "black";
+        }
+    }
+</script>
+</head>
+<body>
+    <main>
+            <input 
+            type="number"
+            id="primeiro"
+            placeholder="digite o seu numero"
+            >
+            <input 
+            type="number"
+            id="segundo"
+            placeholder="digite o seu numero"
+            >
+            <button onclick="somarNumero()">somar</button>
+            <button onclick="subtrairNumero()">subtrair</button>
+            <button onclick="dividirNumero()">dividir</button>
+            <button onclick="multiplicarNumero()">multiplicar</button>
+            
+            <p>Resultado:<span id="resultado"></span></p>   
+</main>
+</body>
+</html>
