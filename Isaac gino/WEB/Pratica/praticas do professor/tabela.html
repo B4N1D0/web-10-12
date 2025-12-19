@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabela</title>
+<style>
+    body{
+        background-color: black;
+    }
+    :root{
+        --cor-da-tabela:white;
+        --cor-da-borda:silver;
+
+    }
+    td{
+        font-size: 60px;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+        color: var(--cor-da-tabela);
+    }
+    .centralizador{
+        text-align: center;
+    }
+     h2{
+        font-size: 60px;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+        color: var(--cor-da-tabela);
+    }
+</style>
+</head>
+
+<body>
+    
+    <table border="2" class="centralizador">
+    <tr>
+        <td><a href="#Capitulo1">Capitulo1</a></td>
+        <td>item2</td>
+        <td rowspan="2">item3</td>
+    </tr>
+    <tr>
+        <td colspan="2">item 4</td>
+    </tr>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nostrum quod aspernatur harum quis in eaque voluptate fuga quos qui, ratione soluta ex, eligendi omnis vitae ipsum hic minima magnam!</p>
+<h2><id="Capitulo1";>Capitulo1</h2>
+
+</body>
+
+<!-- usar o bagulho de click pra navegar na msm pagina o codigo e o seguinte 
+ <p><a href="#Capitulo1">Capitulo 1</a></p> so pra ilustra esta em p
+ se a pagina for muito longa use isso pra localizar algo tipo partiçoes ou capitulos
+ <p><id="Capitulo1">Capitulo1<p>

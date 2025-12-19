@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Completa</title>
+    <link rel="stylesheet" href="pokemon.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pokédex Completa</h1>
+            <div class="search-container">
+                <input type="text" id="pokemon-search" placeholder="Buscar Pokémon por nome ou ID...">
+                <button onclick="searchPokemon()">Buscar</button>
+                <button onclick="toggleView()" id="toggle-view">Ver Lista</button>
+            </div>
+            
+            <!-- Histórico de Buscas -->
+            <div class="history-container">
+                <h3>Histórico de Buscas:</h3>
+                <ul id="history-list"></ul>
+            </div>
+        </header>
+
+        <main>
+            <!-- Modo Detalhes do Pokémon -->
+            <div id="pokemon-details" class="pokemon-details active">
+                <div class="pokemon-card">
+                    <div class="pokemon-header">
+                        <h2 id="pokemon-name">Nome Pokémon</h2>
+                        <span id="pokemon-id">#000</span>
+                    </div>
+                    
+                    <div class="pokemon-image-container">
+                        <img id="pokemon-image" src="" alt="Pokémon">
+                    </div>
+                    
+                    <div class="pokemon-types" id="pokemon-types"></div>
+                    
+                    <div class="pokemon-stats">
+                        <h3>Estatísticas</h3>
+                        <div id="stats-container"></div>
+                    </div>
+                    
+                    <div class="pokemon-info">
+                        <div class="info-item">
+                            <span class="label">Altura:</span>
+                            <span id="pokemon-height">0 m</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Peso:</span>
+                            <span id="pokemon-weight">0 kg</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Habilidades:</span>
+                            <span id="pokemon-abilities"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modo Lista de Pokémon -->
+            <div id="pokemon-list" class="pokemon-list">
+                <div class="list-header">
+                    <h2>Lista de Pokémon</h2>
+                    <div class="pagination-controls">
+                        <button id="prev-page" onclick="changePage(-1)">Anterior</button>
+                        <span id="page-info">Página 1</span>
+                        <button id="next-page" onclick="changePage(1)">Próxima</button>
+                    </div>
+                </div>
+                
+                <div class="pokemon-grid" id="pokemon-grid"></div>
+                
+                <div class="load-more">
+                    <button onclick="loadMorePokemon()">Carregar Mais</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="pokemon.js"></script>
+</body>
+</html>

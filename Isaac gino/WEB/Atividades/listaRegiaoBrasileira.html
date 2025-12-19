@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As Regiões do Brasil</title>
+    <link rel="shortcut-icon" href="../img/Flag_of_Brazil.svg" type="image/x-icon">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --cor-principal: #0077b6; /* Azul Escuro */
+            --cor-secundaria: #00b4d8; /* Azul Claro */
+            --cor-destaque: #ffb703; /* Amarelo/Dourado */
+            --cor-texto: #e0f2f7; /* Branco Suave */
+            --cor-fundo-degrade: linear-gradient(135deg, #001f3f 0%, #0a192f 100%);
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--cor-fundo-degrade);
+            color: var(--cor-texto);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Container principal para centralizar e limitar a largura */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(10, 25, 47, 0.85); /* Fundo semi-transparente para o conteúdo */
+            padding: 20px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Títulos */
+        h1, h2 {
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .titulo-principal {
+            font-size: 2.5rem; /* Reduzido para ser legível */
+            color: var(--cor-destaque);
+            text-shadow: 0 0 10px rgba(255, 183, 3, 0.5); /* Efeito de brilho */
+        }
+
+        .titulo-secao {
+            font-size: 2rem;
+            color: var(--cor-secundaria);
+            border-bottom: 3px solid var(--cor-principal);
+            padding-bottom: 10px;
+        }
+
+        /* Imagens */
+        .imagem-meio img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Listas de Estados e Capitais */
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex; /* Flexbox para melhor layout */
+            flex-wrap: wrap; /* Permite quebrar em várias linhas */
+            justify-content: center; /* Centraliza os itens na seção */
+            gap: 15px; /* Espaço entre os itens */
+            margin-bottom: 40px;
+        }
+
+        li {
+            background-color: var(--cor-principal);
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-align: left;
+            min-width: 250px;
+            flex-grow: 1; /* Permite que os itens cresçam para preencher o espaço */
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        li:hover {
+            transform: translateY(-3px);
+            background-color: var(--cor-secundaria);
+            box-shadow: 0 5px 15px rgba(0, 180, 216, 0.4);
+        }
+        
+        li b {
+            color: var(--cor-destaque);
+            font-weight: 700;
+            margin-right: 5px;
+        }
+        
+        hr {
+            border: none;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.1);
+            margin: 30px 0;
+        }
+        
+        /* Responsividade para telas menores */
+        @media (max-width: 600px) {
+            .titulo-principal {
+                font-size: 1.8rem;
+            }
+            .titulo-secao {
+                font-size: 1.5rem;
+            }
+            main {
+                padding: 15px;
+            }
+            li {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="titulo-principal">
+            As Regiões Brasileiras 
+            <img src="../img/Flag_of_Brazil.svg" width="30" alt="Bandeira do Brasil">
+        </h1>
+        <hr>
+        <div class="imagem-meio">
+            <img src="../img/mapa-do-brasil-legendado-pintado-regioes-removebg-preview.png" width="300" alt="Mapa das Regiões do Brasil"> 
+        </div>
+    </header>
+
+    <main>
+        
+        <section>
+            <h2 class="titulo-secao">1. Região Norte</h2>
+            <ul>
+                <li><b>Acre:</b> Rio Branco</li> 
+                <li><b>Amapá:</b> Macapá</li> 
+                <li><b>Amazonas:</b> Manaus</li>
+                <li><b>Pará:</b> Belém</li>
+                <li><b>Rondônia:</b> Porto Velho</li>
+                <li><b>Roraima:</b> Boa Vista</li>
+                <li><b>Tocantins:</b> Palmas</li>
+            </ul>
+        </section>
+        
+        <hr>
+        
+        <section>
+            <h2 class="titulo-secao">2. Região Nordeste</h2>
+            <ul>
+                <li><b>Maranhão:</b> São Luís</li>
+                <li><b>Piauí:</b> Teresina</li>
+                <li><b>Ceará:</b> Fortaleza</li>
+                <li><b>Rio Grande do Norte:</b> Natal</li>
+                <li><b>Paraíba:</b> João Pessoa</li>
+                <li><b>Pernambuco:</b> Recife</li>
+                <li><b>Alagoas:</b> Maceió</li>
+                <li><b>Sergipe:</b> Aracaju</li>
+                <li><b>Bahia:</b> Salvador</li>
+            </ul>
+        </section>
+
+        <hr>
+        
+        <section>
+            <h2 class="titulo-secao">3. Região Centro-Oeste</h2>
+            <ul>
+                <li><b>Distrito Federal:</b> Brasília</li>
+                <li><b>Goiás:</b> Goiânia</li>
+                <li><b>Mato Grosso:</b> Cuiabá</li>
+                <li><b>Mato Grosso do Sul:</b> Campo Grande</li>
+            </ul>
+        </section>
+
+        <hr>
+        
+        <section>
+            <h2 class="titulo-secao">4. Região Sudeste</h2>
+            <ul>
+                <li><b>São Paulo:</b> São Paulo</li>
+                <li><b>Minas Gerais:</b> Belo Horizonte</li>
+                <li><b>Rio de Janeiro:</b> Rio de Janeiro</li>
+                <li><b>Espírito Santo:</b> Vitória</li>
+            </ul>
+        </section>
+
+        <hr>
+        
+        <section>
+            <h2 class="titulo-secao">5. Região Sul</h2>
+            <ul>
+                <li><b>Paraná:</b> Curitiba</li>
+                <li><b>Santa Catarina:</b> Florianópolis</li>
+                <li><b>Rio Grande do Sul:</b> Porto Alegre</li>
+            </ul>
+        </section>
+        
+        <hr>
+        
+        <div class="imagem-meio">
+            <img src="../img/goofy/tenor.gif" alt="GIF de animação">
+        </div>
+        
+    </main>
+    
+</body>
+</html>

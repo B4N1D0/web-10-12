@@ -1,0 +1,112 @@
+<!-- 
+ Aninhamento = ato de colocar uma coisa dentro de outra. 
+ -->
+<!-- 
+<table> = inicio e fim da tabela
+<caption> = Titulo
+<thead> = Cabeçalho da tabela
+<tbody> = Corpo da tabela
+<tfoot> = Rodape da tabela -->
+ 
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de notas dos Alunos</title>
+    <link ref="shortcut-icon" href="../img/Flag_of_Brazil.svg"  type="imagen/x-icon">
+<style>
+    :root{
+       --cor-do-titulo: yellow;
+       --cor-da-borda-do-titulo: orange;
+       --cor-do-texto-da-tebela: white;
+       --cor-da-borda-do-texto-da-tabela: black;
+    }
+
+     body{
+    background-image:url(../img/fundo-azul-gradiente-de-luxo-abstrato-suave-azul-escuro-com-banner-de-estudio-de-vinheta-preta.jpg);
+}
+
+
+    .title-principal {
+        font-size :90px;
+        text-align: center;
+        Color: var(--cor-do-titulo);
+        text-shadow:0 0 20px rgba(255, 194, 0, 0.8);
+    }
+    
+    tr {
+        font-size:40px;
+        text-align: center;
+        color: var(--cor-do-texto-da-tebela)
+
+        
+    }
+    .descrição {
+        font-size:20px;
+    }
+     main {
+            max-width: 350px;
+            margin: 0 auto;
+            background-color: rgba(10, 25, 47, 0.85); /* Fundo semi-transparente para o conteúdo */
+            padding: 20px 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+</style>
+    
+</head>
+
+<body>
+
+    <h1 class="title-principal">Lista de notas dos Alunos</h1>
+ <hr color="silver">
+<main> 
+    <table border="1">
+        <tbody>
+            <tr class="text-principal">
+                <th>nome</th>
+                <th>nota 1</th>
+                <th>nota 2</th>
+                
+            </tr>
+            <tr class="text-principal">
+                <th>Adryan</th>
+                <th>8</th>
+                <th>2</th>
+                
+            </tr>
+            <tr class="text-principal">
+                <th>Larissa</th>
+                <th>10</th>
+                <th>9</th>
+                
+            </tr>
+            <tr class="text-principal">
+                <th>Arley</th>
+                <th>1</th>
+                <th>0</th>
+                
+            </tr>
+            <tr class="text-principal">
+                <th>Manu</th>
+                <th>1</th>
+                <th>7</th>
+                
+            </tr>
+            
+             <tfoot>
+                <tr class="descrição">
+                    <th colspan="2">Ensino fundamental</th>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+</main>
+
+
+
+</body>
+

@@ -1,0 +1,97 @@
+:root{
+    --do-fundo-header: lightsalmon;
+    --cor-do-text-secundario: darkblue;
+    --cor-do-fundo-do-texto: orange;
+    --cor-do-sei-la: lightgoldenrodyellow;
+}
+
+     .rainbow{
+        font-size: 2em;
+        font-weight: bold;
+        background: linear-gradient(
+            90deg,
+            red,
+            orange,
+            yellow,
+            green,
+            cyan,
+            blue,
+            violet,
+            red
+        );
+        background-size: 400% 100%;
+
+       background-clip: text;
+
+       -webkit-text-fill-color: transparent;
+
+       animation: rainbowMove 5s linear infinite;
+       /* para o isaac do futuro isso não faz parte do codigo rainbow e so para a esteti */
+        font-size: 60;
+    }
+@keyframes rainbowMove {
+    0% {background-position: 0% 50%; }
+    100% { background-position: 100% 50%;} 
+
+} 
+body{
+    background-color: var(--cor-do-sei-la);
+    margin: 0;
+    height: 100vj;
+    font-family: arial, sans-serif;
+}
+header{
+    background-color: var(--do-fundo-header);
+    max-width: 2000px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    box-shadow: 0 10px 15px rgb(150 150 150);
+    padding-left: 10px;
+    padding:10px;
+}
+
+ h1 {
+    color:#333;
+    font-size: 140px;
+    stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    background-color: var(--cor-do-sei-la);
+    padding: 20px;
+    max-width: 1200px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius:20px;
+    text-align: right;
+    margin-left: auto;
+
+}
+ .conteiner{
+    text-align: center;
+ }
+ main{
+    background-color: var(--do-fundo-header);
+    max-width: 1500px;
+    border-radius: 15px;
+    margin: auto;
+ }
+ h2{
+    color: #333;
+    font-size: 80px;
+    padding: 20px;
+ }
+ p{
+    font-size: 30px;
+    color: white;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: black;
+    padding: 20px
+ }
+ .não-quero-p{
+    font-size: 30px;
+    color: black;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: darkorange;
+    padding: 20px;
+    text-align: center;
+ }
+
+
